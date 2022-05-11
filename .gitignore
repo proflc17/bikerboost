@@ -1,0 +1,6 @@
+# intellij
+.idea/
+
+# project
+demo/target
+demo/demo.iml

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <script src="registerScreen.js"></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<style>
+    .login-container {
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .login-form-1 {
+        padding: 0%;
+        height: min-content;
+    }
+
+    .login-form-1 h3 {
+        text-align: center;
+        color: #333;
+    }
+
+    .login-form-2 {
+        padding: 5%;
+        background: #000035;
+        height: min-content;
+    }
+
+    .login-form-2 h3 {
+        text-align: center;
+        color: #fff;
+    }
+
+    .login-container form {
+        padding: 10%;
+    }
+
+    .btnSubmit {
+        width: 50%;
+        border-radius: 1rem;
+        padding: 1.5%;
+        border: none;
+        cursor: pointer;
+    }
+
+    .login-form-2 .btnSubmit {
+        font-weight: 600;
+        color: #000035;
+        background-color: #fff;
+    }
+
+    .login-form-2 .Login {
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .navbar {
+        background-color: #000035;
+        color: #ffffff;
+        margin-bottom: 5%;
+    }
+</style>
+
+<body>
+
+<nav class="navbar navbar-full">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img src="Icon.png" class ="img-responsive" height="36">
+            </a>
+            <a class="navbar-brand"><h3>BikerBoost</h3></a>
+        </div>
+    </div>
+</nav>
+
+<div class="container login-container">
+    <div class="row">
+        <div class="col-md-6 login-form-1">
+            <img src="registerScreen.png" class="img-rounded">
+        </div>
+
+        <div class="col-md-6 login-form-2">
+            <h3>Sign Up</h3>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name" id="firstname">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Username" id="userRegister">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Email" id="email">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Passwort" id="pwdRegister">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Repeat Your Password"/>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-outline-dark btn-block" onclick="registerUser()">Sign up</button>
+                </div>
+                <div class="form-group">
+                    <a href="http://localhost:8080/demo-1.0-SNAPSHOT/login/loginScreen.html?"
+                       class="Login" value="Login">Want to login?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Screen</title>
+    <script src="userScreen.js"></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<style>
+    .login-container {
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .login-form-1 {
+        padding: 5%;
+        background: #DCDCE4;
+    }
+
+    .login-form-1 h3 {
+        text-align: left;
+        color: #000035;
+    }
+
+    .login-form-1 h5 {
+        text-align: left;
+        color: #000035;
+    }
+
+    .login-form-2 {
+        padding: 5%;
+        background: #000035;
+        height: min-content;
+    }
+
+    .login-form-2 h3 {
+        text-align: center;
+        color: #fff;
+    }
+
+    .login-container form {
+        padding: 10%;
+    }
+
+    .btnSubmit {
+        width: 50%;
+        border-radius: 1rem;
+        padding: 1.5%;
+        border: none;
+        cursor: pointer;
+    }
+
+    .login-form-2 .btnSubmit {
+        font-weight: 600;
+        color: #000035;
+        background-color: #fff;
+    }
+
+    .login-form-2 .Register {
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .navbar {
+        background-color: #000035;
+        color: #ffffff;
+        margin-bottom: 5%;
+    }
+
+    .image-container{
+        align-content: revert;
+    }
+
+    .login-form-1 .Register {
+        color: #000035;
+        font-weight: 600;
+        text-decoration: none;
+    }
+</style>
+<body>
+
+<nav class="navbar navbar-full">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img src="../meeting/Icon.png" alt="..." height="36">
+            </a>
+            <a class="navbar-brand"><h3>BikerBoost</h3></a>
+        </div>
+    </div>
+</nav>
+
+<div class="container login-container">
+    <div class="row">
+        <div class="col-md-6 login-form-1">
+            <div class="container image-container">
+                <img src="userImage.png" height="150px" align="right">
+            </div>
+            <div>
+                <h3>User</h3>
+                <h5>Firstname Lastname</h5>
+                <h5>Email</h5>
+                <div class="form-group">
+                    <a href="http://localhost:63342/BikerBoostGit/demo/src/main/webapp/follower/followerScreen.html?_ijt=4carkfcm2qlo218jv70rv3mkd0"
+                       class="Register" value="Login">Follower List</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 login-form-2">
+            <h3>Meeting</h3>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Meeting Code" value=""/>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btnSubmit" onclick="createCode()" value="Create Code"/>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btnSubmit" onclick="joinMeeting()" value="Join Meeting"/>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btnSubmit" onclick="returnToLoginScreen()" value="Return to Login Screen"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
