@@ -8,7 +8,8 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <style>
@@ -73,7 +74,7 @@
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">
-                <img src="Icon.png" alt="..." height="36">
+                <img src="../../../../../../../bikerboost/demo/src/main/webapp/login/Icon.png" alt="..." height="36">
             </a>
             <a class="navbar-brand"><h3>BikerBoost</h3></a>
         </div>
@@ -83,24 +84,25 @@
 <div class="container login-container">
     <div class="row">
         <div class="col-md-6 login-form-1">
-            <img src="loginScreen.png" class="img-rounded">
+            <img src="../../../../../../../bikerboost/demo/src/main/webapp/login/loginScreen.png" class="img-rounded"
+                 width="550px">
         </div>
 
         <div class="col-md-6 login-form-2">
             <h3>Login</h3>
             <form>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Your Email" id="email"/>
+                    <input type="text" id="emailL" class="form-control" placeholder="Your Email" value=""/>
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Your Password" id="password"/>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-outline-dark btn-block" onclick="loginUser()">Login</button>
+                    <input type="password" id="passwdL" class="form-control" placeholder="Your Password" value=""/>
                 </div>
                 <div class="form-group">
-                    <a href="http://localhost:8080/demo-1.0-SNAPSHOT/register/registerScreen.html"
-                       class="Register" value="Login">Want to register?</a>
+                    <input type="submit" id="loginUsr" class="btnSubmit" onclick="loginUser()" value="Login"/>
+                </div>
+                <div class="form-group">
+                    <a href="http://localhost:63342/BikerBoostGit/demo/src/main/webapp/register/registerScreen.html?_ijt=9bsjbeo6u9vpj2sctf3sm0qjmf"
+                       class="Register" id="wantRegister" value="Login">Want to register?</a>
                 </div>
             </form>
         </div>
