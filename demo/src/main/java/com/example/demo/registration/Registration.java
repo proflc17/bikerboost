@@ -1,5 +1,7 @@
-package com.example.demo;
+package com.example.demo.registration;
 
+import com.example.demo.beans.RegistrationData;
+import com.example.demo.beans.User;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
@@ -34,7 +36,6 @@ public class Registration {
         String email = registrationData.getEmail();
         String password = registrationData.getPassword();
 
-
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
@@ -48,6 +49,7 @@ public class Registration {
             preparedStatement.setString(4, password);
 
             int addedRows = preparedStatement.executeUpdate();
+
             if (addedRows > 0) {
                 user = new User();
                 user.name = name;
@@ -58,7 +60,8 @@ public class Registration {
 
             stmt.close();
             conn.close();
-        }catch(Exception e){
+
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return Response.ok().build();

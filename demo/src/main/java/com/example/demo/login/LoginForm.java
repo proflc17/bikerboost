@@ -1,6 +1,6 @@
-package com.example.demo;
+package com.example.demo.login;
 
-import com.mysql.cj.protocol.Resultset;
+import com.example.demo.beans.LoginData;
 import com.nimbusds.jose.*;
 import com.nimbusds.jose.crypto.MACSigner;
 import jakarta.ws.rs.*;
@@ -12,6 +12,7 @@ import java.sql.*;
 @Path("/login")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
+
 public class LoginForm {
 
     public LoginForm() throws ClassNotFoundException {
